@@ -8,17 +8,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 
+# src配下のリソースをコンテナのワークディレクトリにコピーする
 COPY . .
 
 # コンテナ起動時に実行するコマンドを設定
-CMD ["python", "app/app.py"]
-
-# Dockerイメージをビルド
-# docker build -t my-python-app . 
-
-# この時/bin/shと末尾に追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れるようになる。
-# '--rm'を追記することで、コンテナから抜けたタイミングでコンテナを削除していくれる
-# docker run -it --rm my-python-app /bin/sh
+CMD ["python", "myapp/app.py"]
 
 

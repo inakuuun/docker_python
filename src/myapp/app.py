@@ -2,7 +2,7 @@ import math
 import sys
 
 def main():
-  print("Python")
+  print("こんにちは")
 
 if __name__ == "__main__":
   main()
