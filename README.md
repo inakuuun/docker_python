@@ -1,5 +1,6 @@
 ## Dockerイメージをビルド
-- **src/.** で、相対的にdockerファイルが存在する階層のパスを指定。
+- **src/.** で、相対的にdockerファイルが存在する階層のパスを指定
+
 `docker build -t python-app src/.`
 
 ## Dockerコンテナを起動
