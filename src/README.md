@@ -1,6 +1,8 @@
 ## Dockerイメージをビルド
-- docker build -t my-python-app . 
+`docker build -t my-python-app . `
 
-# '--rm'を追記することで、コンテナから抜けたタイミングでコンテナを削除していくれる
-# この時/bin/shと末尾に追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れるようになる。
-- docker run -it --rm my-python-app /bin/sh
+## Dockerコンテナを起動
+- '--rm'を追記することで、コンテナから抜けたタイミングでコンテナを削除してくれる
+- この時/bin/shと末尾に追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れるようになる。
+
+`docker run -it --rm my-python-app /bin/sh`
