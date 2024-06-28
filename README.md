@@ -1,5 +1,5 @@
 ## Dockerイメージをビルド
-`docker build -t python-app . `
+`docker build -t python-app .`
 
 ## Dockerコンテナを起動
 - **--rm**を追記することで、コンテナから抜けたタイミングでコンテナを削除してくれる
