@@ -18,4 +18,4 @@
 `docker image ls`
 
 ## コンテナ内でpythonを実行
-`docker image ls`
+`python myapp/app.py`
