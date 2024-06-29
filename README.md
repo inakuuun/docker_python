@@ -8,9 +8,8 @@
 
 `docker container run -d --name scraping_job_site_co -p 50001:50001 scraping_job_site`
 
--  **-it** と **/bin/sh** を追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れる。
-
 ## コンテナを起動(コンテナの中に入るパターン)
+-  **-it** と **/bin/sh** を追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れる。
 `docker container run -it --name scraping_job_site_co -p 50001:50001 scraping_job_site sh`
 
 - **-it** と **/bin/sh**で起動した場合は、コンテナ内で下記コマンドを実行することでWebサーバを起動することができる
