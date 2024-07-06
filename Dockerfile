@@ -10,9 +10,6 @@ COPY ./requirements.txt /work/requirements.txt
 # 開発で使用するパッケージをインストール
 RUN pip install --no-cache-dir --upgrade -r /work/requirements.txt
 
-# ADD ./app /work/app
-COPY ./app /work/app
-
 # 'docker run'時に実行
 # コンテナ起動時に実行するコマンドを設定
 # CMD ["python", "myapp/app.py"]
