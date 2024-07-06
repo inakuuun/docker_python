@@ -15,7 +15,10 @@
 ## コンテナを起動(コンテナの中に入ってからWebサーバを起動するパターン)
 - **-it** と **/bin/sh** を追記することで、コンテナが立ち上がり次第、コンテナの中身をCLIで触れる。
   <!-- - `docker container run -it --name s_scraping_job_site -p 50001:50001 i_scraping_job_site sh` -->
+- Windowsの場合
   - `docker container run -it --name s_scraping_job_site -v $pwd/app:/work/app -p 50001:50001 i_scraping_job_site sh`
+- MacOSの場合
+  - `docker container run -it --name s_scraping_job_site -v "$(pwd)"/app:/work/app -p 50001:50001 i_scraping_job_site sh`
 
 - コンテナ内で下記コマンドを実行することでWebサーバを起動することができる
   - `uvicorn app.main:app --host 0.0.0.0 --port 50001`
