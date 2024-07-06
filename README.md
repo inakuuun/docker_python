@@ -1,11 +1,14 @@
 ## イメージをビルド
 - **「.」** で、相対的にdockerファイルが存在する階層のパスを指定
 - **--no-cache**を使うことで、イメージビルド時にキャッシュを使わない(イメージを削除しなおさなくて良くなる)
-  - `docker image build　--no-cache -t i_scraping_job_site .`
+  - `docker image build --no-cache -t i_scraping_job_site .`
 
 ## コンテナを起動(通常)
 <!-- - `docker container run -d --name s_scraping_job_site -p 50001:50001 i_scraping_job_site` -->
-- `docker container run -d --name s_scraping_job_site -v $pwd/app:/work/app -p 50001:50001 i_scraping_job_site`
+- Windowsの場合
+  - `docker container run -d --name s_scraping_job_site -v $pwd/app:/work/app -p 50001:50001 i_scraping_job_site`
+- MacOSの場合
+  - `docker container run -d --name s_scraping_job_site -v "$(pwd)"/app:/work/app -p 50001:50001 i_scraping_job_site`
 
 - Webサイトにアクセス => http://localhost:50001/
 
