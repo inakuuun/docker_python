@@ -25,7 +25,7 @@
 
 - Webサイトにアクセス => http://localhost:50001/
 
-## 起動中のコンテナを再起動
+## コンテナを再起動
 `docker restart s_scraping_job_site`
 
 ## 起動中のコンテナを確認
