@@ -12,5 +12,4 @@ RUN pip install --no-cache-dir --upgrade -r /work/requirements.txt
 
 # 'docker run'時に実行
 # コンテナ起動時に実行するコマンドを設定
-# CMD ["python", "myapp/app.py"]
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "50001"]
