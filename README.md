@@ -20,7 +20,7 @@
 - MacOSの場合
   - `docker container run -it --name s_scraping_job_site -v "$(pwd)"/app:/work/app -p 50001:50001 i_scraping_job_site sh`
 
-- コンテナ内で下記コマンドを実行することでWebサーバを起動することができる
+- コンテナ内で下記コマンドを実行することで、事前にインストールしておいたUvicornというWebサーバを起動することができる
   - `uvicorn app.main:app --host 0.0.0.0 --port 50001`
 
 - Webサイトにアクセス => http://localhost:50001/
