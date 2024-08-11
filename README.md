@@ -5,6 +5,8 @@
 ## コマンド一覧
 - CLIリファレンス(公式)
   - https://docs.docker.com/reference/cli/docker/
+- Docker Composeコマンド(公式)
+  - https://docs.docker.com/reference/cli/docker/compose/
 
 ## コンテナを起動
 - **-d**を使うことで、バックグラウンドで起動(-dなしバージョンと比較した方がわかりやすいので試してみると良いかも)
@@ -33,4 +35,4 @@ Webサイトにアクセス => http://localhost:50001/
 ## イメージを削除
 - 「**docker image ls**」を実行した時に表示される[REPOSITORY]を指定して削除可能
 
-`docker rmi docker_python-scraping_job_site`
+`docker image rm docker_python-scraping_job_site`
