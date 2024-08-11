@@ -21,7 +21,7 @@ Webサイトにアクセス => http://localhost:50001/
 `docker container ps -a`
 
 ## 起動中のコンテナを削除
-- [CONTAINER ID]または[NAMES]を指定
+- `docker container ps`を実行した時に表示される[CONTAINER ID]または[NAMES]を指定して削除可能
 
 `docker rm -f docker_python-scraping_job_site-1`
 
@@ -29,6 +29,6 @@ Webサイトにアクセス => http://localhost:50001/
 `docker image ls`
 
 ## イメージを削除
-- [REPOSITORY]を指定
+- `docker image ls`を実行した時に表示される[REPOSITORY]を指定して削除可能
 
 `docker rmi docker_python-scraping_job_site`
