@@ -1,5 +1,5 @@
 ## 前提
-- Dockerがインストールされていること
+- Docker Desktopがインストールされていること
 - 一連の操作はDockerfileとcompose.yamlファイルが存在する階層で実行すること(cdコマンドでDockerfileが存在する階層へ行く)
 
 ## コンテナを起動
