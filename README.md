@@ -5,7 +5,8 @@
 ## イメージをビルド
 - **「.」** で、相対的にdockerファイルが存在する階層のパスを指定
 - **--no-cache**を使うことで、イメージビルド時にキャッシュを使わない(イメージを削除しなおさなくて良くなる)
-  - `docker image build --no-cache -t i_scraping_job_site .`
+
+`docker image build --no-cache -t i_scraping_job_site .`
 
 ## コンテナを起動
 - **-d**を使うことで、バックグラウンドで起動(-dなしバージョンと比較した方がわかりやすいので試してみると良いかも)
@@ -21,7 +22,7 @@ Webサイトにアクセス => http://localhost:50001/
 `docker container ps -a`
 
 ## 起動中のコンテナを削除
-- `docker container ps`を実行した時に表示される[CONTAINER ID]または[NAMES]を指定して削除可能
+- 「**docker container ps**」を実行した時に表示される[CONTAINER ID]または[NAMES]を指定して削除可能
 
 `docker rm -f docker_python-scraping_job_site-1`
 
@@ -29,6 +30,6 @@ Webサイトにアクセス => http://localhost:50001/
 `docker image ls`
 
 ## イメージを削除
-- `docker image ls`を実行した時に表示される[REPOSITORY]を指定して削除可能
+- 「**docker image ls**」を実行した時に表示される[REPOSITORY]を指定して削除可能
 
 `docker rmi docker_python-scraping_job_site`
