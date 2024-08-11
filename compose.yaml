@@ -1,0 +1,7 @@
+services:
+  scraping_job_site:
+    build: .
+    ports:
+      - "50001:50001"
+    volumes:
+      - ./app:/work/app
