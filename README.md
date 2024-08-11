@@ -15,6 +15,9 @@ Webサイトにアクセス => http://localhost:50001/
 ## 停止中のコンテナも含めて確認
 `docker container ps -a`
 
+## コンテナを停止
+`docker compose down`
+
 ## 起動中のコンテナを削除
 - 「**docker container ps**」を実行した時に表示される[CONTAINER ID]または[NAMES]を指定して削除可能
 
