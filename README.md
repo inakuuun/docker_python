@@ -18,7 +18,7 @@ Webサイトにアクセス => http://localhost:50001/
 ## 停止中のコンテナも含めて確認
 `docker container ps -a`
 
-## 起動中のコンテナを削除
+## コンテナを削除
 - 「**docker container ps**」を実行した時に表示される[CONTAINER ID]または[NAMES]を指定して削除可能
 
 `docker rm -f docker_python-scraping_job_site-1`
