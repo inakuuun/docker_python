@@ -2,6 +2,10 @@
 - Docker Desktopがインストールされていること
 - 一連の操作はDockerfileとcompose.yamlファイルが存在する階層で実行すること(cdコマンドでDockerfileが存在する階層へ行く)
 
+## コマンド一覧
+- CLIリファレンス(公式)
+  - https://docs.docker.com/reference/cli/docker/
+
 ## コンテナを起動
 - **-d**を使うことで、バックグラウンドで起動(-dなしバージョンと比較した方がわかりやすいので試してみると良いかも)
 
